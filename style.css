@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+  }
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  /* Main container */
+  #main-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(216, 12%, 8%);
+  }
+  
+  /* Rating container */
+  #rating-container, #feedback-container {
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 20px;
+    width: 400px;
+    padding: 2rem;
+  }
+
+  #star-icon {
+    background-color: hsl(200, 3%, 21%);
+    width: fit-content;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+
+  #rating-scale {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .number {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(200, 3%, 21%);
+    color: hsl(217, 12%, 63%);
+    border-radius: 50px;
+  }
+
+  .number.checked {
+    background-color: hsl(25, 97%, 53%);;
+    color: white;
+  }
+
+  #rating-scale span:hover {
+    background-color: hsl(217, 12%, 63%);
+    color: white;
+  }
+
+  #submit-button {
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    border-radius: 32px;
+    padding: 12px;
+    border: none;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #submit-button:hover {
+    background-color: white;
+    color: black;
+  }
+
+  #feedback-question {
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 1rem;
+  }
+
+  #feedback-text {
+    color: hsl(217, 12%, 63%);
+    font-size: 15px;
+    margin-bottom: 2rem;
+  }
+
+  /* Feedback response container */
+  .feedback-container{
+    display: none;
+}
+
+  #feedback-reply {
+    text-align: center;
+  }
+
+  #selection-msg {
+    margin: auto;
+    background-color: hsl(200, 3%, 21%);
+    border-radius: 30px;
+    color: hsl(25, 97%, 53%);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 10px;
+    width: 70%;
+    text-align: center;
+  }
+
+  #thank-you-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  #thank-you-message {
+    color: white;
+    margin-bottom: 1.5rem;
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  #thank-you-description {
+    color: hsl(217, 12%, 63%);
+    margin-bottom: 2rem;
+    text-align: center;
+  }
